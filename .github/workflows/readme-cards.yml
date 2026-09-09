@@ -17,7 +17,7 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
@@ -36,7 +36,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate streak stats
-        uses: DenverCoder1/github-readme-streak-stats@main
+        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
         with:
           options: user=${{ github.repository_owner }}&background=002B36&border=073642&stroke=073642&ring=268BD2&fire=CB4B16&currStreakNum=EEE8D5&sideNums=839496&currStreakLabel=93A1A1&sideLabels=839496&dates=586E75&disable_animations=true
           path: profile/streak.svg
@@ -48,7 +48,7 @@ jobs:
       # there's nothing to wait on (no required reviews on generated files).
       - name: Open PR with refreshed cards
         id: cards-pr
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "Update README cards"
           branch: bot/readme-cards-update
