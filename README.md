@@ -59,14 +59,11 @@ Outside of the day job I split time between low-level systems and ML: LLMs and n
 
 ## Projects
 
-<table>
-<tr>
-<td width="280"><a href="https://mem.codes"><img src="https://mem.codes/opengraph-image" width="260" alt="mem.codes — Solarized Dark blog and admin portal" /></a></td>
-<td>
+<img align="right" width="220" alt="mem.codes — Solarized Dark blog and admin portal" src="https://mem.codes/opengraph-image" />
 
 ### 🪶 [mem.codes](https://mem.codes)
 
-Personal blog with a DynamoDB-backed admin portal, built on Next.js. *(Repo is private — the site isn't; the thumbnail above is the site's own live OG image, not a mockup.)*
+Personal blog with a DynamoDB-backed admin portal, built on Next.js. *(Repo is private — the site isn't; the thumbnail is the site's own live OG image, not a mockup.)*
 
 - **Zero static AWS keys** — DynamoDB access is provisioned through Vercel's AWS Marketplace integration over OIDC federation, not IAM access keys
 - **Passwordless admin** — WebAuthn/passkey login only; no password is ever stored or checked
@@ -74,9 +71,7 @@ Personal blog with a DynamoDB-backed admin portal, built on Next.js. *(Repo is p
 - **Actually tested** — a full Playwright e2e suite (CRUD, autosave, image upload, auth/security) runs in CI on every push
 - **The unglamorous SEO stuff, done right** — ISR, sitemap, RSS, JSON-LD, and EXIF/GPS stripping on every uploaded image
 
-</td>
-</tr>
-</table>
+<br clear="right" />
 
 ### 🌱 [verde](https://github.com/mmat30/verde) — *for the plot*
 
