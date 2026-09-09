@@ -6,6 +6,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1200&color=93A1A1&center=true&vCenter=true&width=600&lines=Building+on+AWS+%E2%80%94+OIDC%2C+DynamoDB%2C+Lambda;Next.js+%2B+TypeScript+on+the+frontend;Rust+for+anything+that+needs+to+be+fast;Currently+writing+at+mem.codes" alt="Typing SVG" />
 
+![Profile views](https://komarev.com/ghpvc/?username=mmat30&style=for-the-badge&color=268BD2&label=PROFILE+VIEWS)
+
 </div>
 
 <br />
@@ -57,15 +59,24 @@ Outside of the day job I split time between low-level systems and ML: LLMs and n
 
 ## Projects
 
+<table>
+<tr>
+<td width="280"><a href="https://mem.codes"><img src="https://mem.codes/opengraph-image" width="260" alt="mem.codes — Solarized Dark blog and admin portal" /></a></td>
+<td>
+
 ### 🪶 [mem.codes](https://mem.codes)
 
-Personal blog with a DynamoDB-backed admin portal, built on Next.js. *(Repo is private — the site isn't.)*
+Personal blog with a DynamoDB-backed admin portal, built on Next.js. *(Repo is private — the site isn't; the thumbnail above is the site's own live OG image, not a mockup.)*
 
 - **Zero static AWS keys** — DynamoDB access is provisioned through Vercel's AWS Marketplace integration over OIDC federation, not IAM access keys
 - **Passwordless admin** — WebAuthn/passkey login only; no password is ever stored or checked
 - **Validated at the boundary** — every mutation (posts, auth, the view counter) is checked against a Zod schema before it touches the database
 - **Actually tested** — a full Playwright e2e suite (CRUD, autosave, image upload, auth/security) runs in CI on every push
 - **The unglamorous SEO stuff, done right** — ISR, sitemap, RSS, JSON-LD, and EXIF/GPS stripping on every uploaded image
+
+</td>
+</tr>
+</table>
 
 ### 🌱 [verde](https://github.com/mmat30/verde) — *for the plot*
 
